@@ -7,8 +7,12 @@
 *{
     padding: 0; margin: 0; box-sizing: border-box; 
   }
+section {
+  padding: 40px 36px 0 36px;
+}
 
 .hero {
+  padding: 40px 36px 0 36px;
   height: 508px;
   width: auto;  
   background-image: url("images/hero375.png");
@@ -27,7 +31,7 @@
   justify-content: space-between;
   height: 521px;
   z-index: 10;
-  min-width: 370px;
+  
 }
 
 .lisaimg {
@@ -41,16 +45,16 @@
 }
 
 .linkedinlink img {
-  width: 15.4px;
-  height: 14.75px;
+  width: 15px;
+  height: 15px;
 }
 .gitlink img {
-  width: 17.15px;
-  height: 18.45px;
+  width: 17px;
+  height: 17px;
 }
 .stacklink img {
-  width: 19.01px;
-  height: 19.01px;
+  width: 19px;
+  height: 19px;
 }
 .social-links a {
   border-width: 40px;
@@ -83,7 +87,7 @@ strong {
   background-color: #f4f4f4;
 }
 .textbox {
-  width: 302px;
+  /*width: 302px;*/
   height: auto;
   margin: 0 auto;
   padding-top: 35px;
@@ -110,12 +114,9 @@ strong {
   margin-right: 12px;
 }
 
-.tech {
-  width: 100%;
-}
 
 .tech {
-  width: 302px;
+  /*width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -145,12 +146,13 @@ h4 {
 h5 {
   background-color: rgba(255, 192, 203, 0.9);
   font-size: 9px;
- line-height: 10px;
+  line-height: 10px;
   width: fit-content;
   display: inline-block;
   margin: 3px;
   color: rgba(43, 46, 52, 0.7);
   border: 1px solid rgba(253, 223, 231, 0.9);
+  padding: 4px 5px;
 }
 h3 {
   font-family: 'Montserrat';
@@ -162,14 +164,15 @@ h3 {
 }
 
 .smltags {
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  
 }
 .linkarrows {
   color: red;
   font-weight: bold;
   display: inline-block;
+  text-decoration: none;
 }
 .featured-projects {
   background-color: #f4f4f4;
@@ -178,8 +181,9 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+
 .project-card {
-  width: 302px;
+  /*width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -187,12 +191,14 @@ h3 {
   font-family: 'Roboto';
   font-size: 17px;
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .other-projects {
   background-color: #f4f4f4;
 }
 .other-project-link {
-  width: 302px;
+ /* width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -201,22 +207,22 @@ h3 {
   font-size: 17px;
   line-height: 30px;
 }
-.blog {
-  width: 100%;
-  padding-top: 40px;
+
+.blog-card {
+  /*width: 302px;*/
+  margin: 0 auto;
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 30px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: black;
 }
-.blog-card {
-  width: 302px;
-  margin: 0 auto;
-  height: auto;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  font-family: 'Roboto';
-  font-size: 17px;
-  line-height: 30px;
-}
+
 .blog-date {
   color: red;
 }
@@ -224,16 +230,9 @@ h3 {
   font-size: 21px;
   font-weight: bold;
 }
-.blog-link-card {
-  width: 302px;
-  margin: 0 auto;
-  height: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-family: 'Roboto';
-  font-size: 17px;
-  line-height: 30px;
-}
+
+
+
 .skills {
   margin-top: 40px;
   padding-top: 40px;
@@ -245,7 +244,6 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 302px;
   flex-flow: wrap;
   margin: 0 auto;
   height: auto;
@@ -253,6 +251,7 @@ h3 {
   font-family: 'Roboto';
   font-size: 17px;
   line-height: 30px;
+  align-items: flex-start;
 }
 .skill {
   min-width: 140px;
@@ -263,9 +262,7 @@ h3 {
   margin-top: 40px;
 }
 .more-container-social-links {
-  width: 302px;
-  margin-top: 40px;
-  padding: 40px 0;
+  padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -280,7 +277,7 @@ h3 {
   padding: 15px;
 }
 
-.red-link {
+.red-link a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -292,6 +289,11 @@ h3 {
   font-size: 11px;
   font-family: 'Roboto'
 }
+.linkedin-size img {
+  width: 15px;
+  height: 15px;
+  }
+
 footer {
   background-color:#072BCE;
   min-height: 266px;
@@ -312,4 +314,59 @@ padding: 10px;
 .footer-text {
   text-align: center;
   color: white;
+}
+
+
+/***** MEDIA QUERY ****/
+
+@media only screen and (min-width: 676px){
+ 
+  .hero { 
+    background-image: url("images/pencils.jpg");
+  }
+.heroitems {
+  min-width: 670px;
+}
+.blog-cards{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.blog-card-img {
+  max-width: 300px;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 303px;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+}
+@media only screen and (min-width: 1024px){
+
+  .headertxt {
+    align-self: flex-start;
+  }
+  .heroitems {
+    width: 800px;
+    left: 100px;
+  }
+
+section {
+  padding: 20px 21%;
+}
+
+.project-card {
+  margin: 30px;
+  max-width: 303px;
+}
+.featured-projects {
+  padding: 20px 11%;
+}
 }
