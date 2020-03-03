@@ -65,6 +65,7 @@ section {
 .headertxt {
   font-family: 'Montserrat';
   color: white;
+  align-self: flex-start;
 }
 .headertxt h1 {
   font-weight: bold;
@@ -123,6 +124,8 @@ strong {
   padding-bottom: 35px;
   font-family: 'Montserrat';
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
   background:red;
@@ -207,7 +210,10 @@ h3 {
   font-size: 17px;
   line-height: 30px;
 }
-
+.blog {
+  display: flex;
+  flex-direction: column;
+}
 .blog-card {
   /*width: 302px;*/
   margin: 0 auto;
@@ -229,6 +235,9 @@ h3 {
 .blog-head {
   font-size: 21px;
   font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 30px;
 }
 
 
@@ -237,6 +246,8 @@ h3 {
   margin-top: 40px;
   padding-top: 40px;
   background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
 }
 .list-skills {
   display: flex;
@@ -256,10 +267,14 @@ h3 {
 .skill {
   min-width: 140px;
   padding-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 .more {
   width: auto;
   margin-top: 40px;
+  display: flex;
+flex-direction: column;
 }
 .more-container-social-links {
   padding: 40px;
@@ -320,7 +335,30 @@ padding: 10px;
 /***** MEDIA QUERY ****/
 
 @media only screen and (min-width: 676px){
- 
+ .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+ }
+  .linkedinlink img {
+    width: 25px;
+    height: 25px;
+  }
+  .gitlink img {
+    width: 27px;
+    height: 27px;
+  }
+  .stacklink img {
+    width: 29px;
+    height: 29px;
+  }
+  .social-links a {
+    border-width: 55px;
+    border-radius: 50%;
+    border: solid 3px white;
+    padding: 18px;
+  }
   .hero { 
     background-image: url("images/pencils.jpg");
   }
