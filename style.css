@@ -44,23 +44,41 @@ section {
   padding: 105px 41px 0 41px;
 }
 
-.linkedinlink img {
+/* .linkedinlink img {
   width: 15px;
   height: 15px;
 }
 .gitlink img {
   width: 17px;
   height: 17px;
+  height: 15px;
+  width: 15px;
 }
 .stacklink img {
   width: 19px;
   height: 19px;
+  height: 15px;
+  width: 15px;
+} */
+.social-links {
+  display: flex;
+  flex-direction: row;
 }
+.social-links img {
+  width: 1rem;
+  height: 1rem;
+}
+
 .social-links a {
-  border-width: 40px;
   border-radius: 50%;
   border: solid 3px white;
-  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 8px;
 }
 .headertxt {
   font-family: 'Montserrat';
@@ -196,6 +214,7 @@ h3 {
   line-height: 30px;
   display: flex;
   flex-direction: column;
+  
 }
 .other-projects {
   background-color: #f4f4f4;
@@ -214,12 +233,11 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-.blog-card {
+.blog-card a{
   /*width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
-  padding-bottom: 35px;
   font-family: 'Roboto';
   font-size: 17px;
   line-height: 30px;
@@ -231,6 +249,7 @@ h3 {
 
 .blog-date {
   color: red;
+  font-family: 'Roboto'
 }
 .blog-head {
   font-size: 21px;
@@ -240,7 +259,9 @@ h3 {
   line-height: 30px;
 }
 
-
+.blog-text{
+  padding-bottom: 25px;
+}
 
 .skills {
   margin-top: 40px;
@@ -283,7 +304,25 @@ flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
 }
-
+.social-links-red{
+  display: flex;
+  justify-content: center;
+}
+.social-links-red a {
+  border-radius: 50%;
+  border: solid 3px red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 8px;
+}
+.social-links-red img {
+  width: 1rem;
+  height: 1rem;
+}
 .red-icons {
   width: 59px;
   height: 58px;
@@ -331,7 +370,6 @@ padding: 10px;
   color: white;
 }
 
-
 /***** MEDIA QUERY ****/
 
 @media only screen and (min-width: 676px){
@@ -341,7 +379,7 @@ padding: 10px;
   justify-content: space-between;
   width: 230px;
  }
-  .linkedinlink img {
+  /*.linkedinlink img {
     width: 25px;
     height: 25px;
   }
@@ -352,26 +390,21 @@ padding: 10px;
   .stacklink img {
     width: 29px;
     height: 29px;
+  }*/
+  .social-links img {
+    width: 2rem;
+    height: 2rem;
   }
   .social-links a {
-    border-width: 55px;
-    border-radius: 50%;
-    border: solid 3px white;
-    padding: 18px;
+    /* padding: 18px; */
+    width: 4rem;
+    height: 4rem;
   }
   .hero { 
     background-image: url("images/pencils.jpg");
   }
 .heroitems {
   min-width: 670px;
-}
-.blog-cards{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
-.blog-card-img {
-  max-width: 300px;
 }
 .blog-card {
   display: flex;
@@ -380,10 +413,22 @@ flex-wrap: wrap;
   max-width: 303px;
 }
 
+.blog-cards-box{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.blog-card-img {
+  max-width: 300px;
+}
+
+
 .project-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 }
 @media only screen and (min-width: 1024px){
@@ -397,7 +442,7 @@ flex-wrap: wrap;
   }
 
 section {
-  padding: 20px 21%;
+  padding: 20px 100px;
 }
 
 .project-card {
