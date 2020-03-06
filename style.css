@@ -17,11 +17,7 @@ section {
   width: auto;  
   background-image: url("images/hero375.png");
 }
-.heronormal{
-  object-fit: cover;
-  width: auto;
-  max-height: 508px;
-}
+
 .heroitems {
   position: absolute;
   display: flex;
@@ -31,6 +27,7 @@ section {
   justify-content: space-between;
   height: 521px;
   z-index: 10;
+  padding: 105px 41px 0 41px;
   
 }
 
@@ -40,30 +37,12 @@ section {
   border-radius: 50%;
   border: solid 3px white;
 }
-.heroitems {
-  padding: 105px 41px 0 41px;
-}
 
-/* .linkedinlink img {
-  width: 15px;
-  height: 15px;
-}
-.gitlink img {
-  width: 17px;
-  height: 17px;
-  height: 15px;
-  width: 15px;
-}
-.stacklink img {
-  width: 19px;
-  height: 19px;
-  height: 15px;
-  width: 15px;
-} */
 .social-links {
   display: flex;
   flex-direction: row;
 }
+
 .social-links img {
   width: 1rem;
   height: 1rem;
@@ -135,7 +114,6 @@ strong {
 
 
 .tech {
-  /*width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -204,7 +182,6 @@ h3 {
 }
 
 .project-card {
-  /*width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -234,7 +211,6 @@ h3 {
   flex-direction: column;
 }
 .blog-card a{
-  /*width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -249,7 +225,9 @@ h3 {
 
 .blog-date {
   color: red;
-  font-family: 'Roboto'
+  font-family: 'Roboto';
+  font-weight: lighter;
+
 }
 .blog-head {
   font-size: 21px;
@@ -295,7 +273,7 @@ h3 {
   width: auto;
   margin-top: 40px;
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
 .more-container-social-links {
   padding: 40px;
@@ -355,10 +333,10 @@ footer {
 
 }
 .footer-robo {
-font-family: 'Roboto';
-font-size: 21px;
-font-weight: bold;
-padding: 10px;
+  font-family: 'Roboto';
+  font-size: 21px;
+  font-weight: bold;
+  padding: 10px;
 }
 .footer-mont {
   font-family: 'Montserrat';
@@ -379,30 +357,20 @@ padding: 10px;
   justify-content: space-between;
   width: 230px;
  }
-  /*.linkedinlink img {
-    width: 25px;
-    height: 25px;
+
+.social-links img {
+  width: 2rem;
+  height: 2rem;
   }
-  .gitlink img {
-    width: 27px;
-    height: 27px;
+.social-links a {
+  width: 4rem;
+  height: 4rem;
   }
-  .stacklink img {
-    width: 29px;
-    height: 29px;
-  }*/
-  .social-links img {
-    width: 2rem;
-    height: 2rem;
+
+.hero { 
+  background-image: url("images/pencils.jpg");
   }
-  .social-links a {
-    /* padding: 18px; */
-    width: 4rem;
-    height: 4rem;
-  }
-  .hero { 
-    background-image: url("images/pencils.jpg");
-  }
+
 .heroitems {
   min-width: 670px;
 }
@@ -414,10 +382,10 @@ padding: 10px;
 }
 
 .blog-cards-box{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .blog-card-img {
   max-width: 300px;
@@ -433,13 +401,13 @@ justify-content: center;
 }
 @media only screen and (min-width: 1024px){
 
-  .headertxt {
-    align-self: flex-start;
+.headertxt {
+  align-self: flex-start;
   }
-  .heroitems {
-    width: 800px;
-    left: 100px;
-  }
+.heroitems {
+  width: 800px;
+  left: 100px;
+}
 
 section {
   padding: 20px 100px;
