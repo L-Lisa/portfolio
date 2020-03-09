@@ -197,7 +197,6 @@ h3 {
   background-color: #f4f4f4;
 }
 .other-project-link {
- /* width: 302px;*/
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -205,7 +204,13 @@ h3 {
   font-family: 'Roboto';
   font-size: 17px;
   line-height: 30px;
+  text-decoration: none;
 }
+.other-project-link a{
+  text-decoration: none;
+  color: black;
+}
+
 .blog {
   display: flex;
   flex-direction: column;
