@@ -137,7 +137,7 @@ h2 {
 
 h4 {
   font-family: 'Roboto';
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 17px;
   color: red;
   display: inline-block;
@@ -161,6 +161,9 @@ h3 {
   color: red;
   padding: 30px;
 }
+.red {
+  color: red;
+}
 
 .smltags {
   display: flex;
@@ -172,6 +175,7 @@ h3 {
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
+  margin-left: 10px;
 }
 .featured-projects {
   background-color: #f4f4f4;
@@ -192,13 +196,12 @@ h3 {
   flex-direction: column;
   
 }
-.other-projects {
+.gray {
   background-color: #f4f4f4;
 }
 .other-project-link {
   margin: 0 auto;
   height: auto;
-  padding-top: 35px;
   padding-bottom: 35px;
   font-family: 'Roboto';
   font-size: 17px;
@@ -213,6 +216,7 @@ h3 {
 .blog {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .blog-card a{
   margin: 0 auto;
@@ -240,9 +244,11 @@ h3 {
   font-size: 17px;
   line-height: 30px;
 }
-
-.blog-text{
-  padding-bottom: 25px;
+.img300{
+  width: 300px;
+  height: 204px;
+  object-fit: cover;
+  align-self: center;
 }
 
 .skills {
@@ -351,7 +357,19 @@ footer {
   text-align: center;
   color: white;
 }
+.txt{
+  font-size: 1em;
+  font-weight: lighter;
+  color: black;
+}
+a .txt{
+  text-decoration: none;
+}
 
+.other-link {
+  text-decoration: none;
+  color: black;
+}
 /***** MEDIA QUERY ****/
 
 @media only screen and (min-width: 676px){
@@ -390,7 +408,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between
 }
 .blog-card-img {
   max-width: 300px;
@@ -410,7 +428,7 @@ footer {
   align-self: flex-start;
   }
 .heroitems {
-  width: 800px;
+  width: 80%;
   left: 100px;
 }
 
