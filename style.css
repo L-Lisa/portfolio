@@ -4,9 +4,12 @@
     font-family: 'Montserrat'
     */
 
-*{
-    padding: 0; margin: 0; box-sizing: border-box; 
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 section {
   padding: 40px 36px 0 36px;
 }
@@ -14,7 +17,7 @@ section {
 .hero {
   padding: 40px 36px 0 36px;
   height: 508px;
-  width: auto;  
+  width: auto;
   background-image: url("images/hero375.png");
 }
 
@@ -28,7 +31,7 @@ section {
   height: 521px;
   z-index: 10;
   padding: 105px 41px 0 41px;
-  
+
 }
 
 .lisaimg {
@@ -59,15 +62,18 @@ section {
   width: 2.5rem;
   margin: 8px;
 }
+
 .headertxt {
   font-family: 'Montserrat';
   color: white;
   align-self: flex-start;
 }
+
 .headertxt h1 {
   font-weight: bold;
   font-size: 40px;
 }
+
 .roboto {
   font-family: 'Roboto';
   color: white;
@@ -76,6 +82,7 @@ section {
   text-align: left;
   letter-spacing: 0.52;
 }
+
 strong {
   font-weight: bold;
   margin-left: 5px;
@@ -84,6 +91,7 @@ strong {
 .introtxt {
   background-color: #f4f4f4;
 }
+
 .textbox {
   /*width: 302px;*/
   height: auto;
@@ -93,6 +101,7 @@ strong {
   font-family: 'Montserrat';
   line-height: 30px;
 }
+
 .line {
   height: 2px;
   width: 40px;
@@ -100,7 +109,7 @@ strong {
   display: inline-block;
   position: relative;
   bottom: .25em;
-  }
+}
 
 .dot {
   height: 10px;
@@ -123,8 +132,10 @@ strong {
   display: flex;
   flex-direction: column;
 }
+
 h2 {
-  background:red;
+  background: red;
+  background-position: auto;
   color: white;
   width: fit-content;
   padding: 4px;
@@ -142,6 +153,7 @@ h4 {
   color: red;
   display: inline-block;
 }
+
 h5 {
   background-color: rgba(255, 192, 203, 0.9);
   font-size: 9px;
@@ -153,6 +165,7 @@ h5 {
   border: 1px solid rgba(253, 223, 231, 0.9);
   padding: 4px 5px;
 }
+
 h3 {
   font-family: 'Montserrat';
   font-weight: bold;
@@ -161,6 +174,7 @@ h3 {
   color: red;
   padding: 30px;
 }
+
 .red {
   color: red;
 }
@@ -168,8 +182,9 @@ h3 {
 .smltags {
   display: flex;
   justify-content: left;
-  
+
 }
+
 .linkarrows {
   color: red;
   font-weight: bold;
@@ -177,6 +192,7 @@ h3 {
   text-decoration: none;
   margin-left: 10px;
 }
+
 .featured-projects {
   background-color: #f4f4f4;
   width: 100%;
@@ -194,11 +210,13 @@ h3 {
   line-height: 30px;
   display: flex;
   flex-direction: column;
-  
+
 }
+
 .gray {
   background-color: #f4f4f4;
 }
+
 .other-project-link {
   margin: 0 auto;
   height: auto;
@@ -208,7 +226,8 @@ h3 {
   line-height: 30px;
   text-decoration: none;
 }
-.other-project-link a{
+
+.other-project-link a {
   text-decoration: none;
   color: black;
 }
@@ -218,7 +237,8 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-.blog-card a{
+
+.blog-card a {
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
@@ -237,6 +257,7 @@ h3 {
   font-weight: lighter;
 
 }
+
 .blog-head {
   font-size: 21px;
   font-weight: bold;
@@ -244,7 +265,8 @@ h3 {
   font-size: 17px;
   line-height: 30px;
 }
-.img300{
+
+.img300 {
   width: 300px;
   height: 204px;
   object-fit: cover;
@@ -258,6 +280,7 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+
 .list-skills {
   display: flex;
   flex-direction: row;
@@ -273,18 +296,21 @@ h3 {
   line-height: 30px;
   align-items: flex-start;
 }
+
 .skill {
   min-width: 140px;
   padding-top: 15px;
   display: flex;
   flex-direction: column;
 }
+
 .more {
   width: auto;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
+
 .more-container-social-links {
   padding: 40px;
   display: flex;
@@ -292,10 +318,12 @@ h3 {
   justify-content: space-between;
   margin: 0 auto;
 }
-.social-links-red{
+
+.social-links-red {
   display: flex;
   justify-content: center;
 }
+
 .social-links-red a {
   border-radius: 50%;
   border: solid 3px red;
@@ -307,10 +335,12 @@ h3 {
   width: 2.5rem;
   margin: 8px;
 }
+
 .social-links-red img {
   width: 1rem;
   height: 1rem;
 }
+
 .red-icons {
   width: 59px;
   height: 58px;
@@ -319,50 +349,57 @@ h3 {
   padding: 15px;
 }
 
-.red-link a{
+.red-link a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
 .link-text {
   text-decoration: none;
   color: red;
   font-size: 11px;
   font-family: 'Roboto'
 }
+
 .linkedin-size img {
   width: 15px;
   height: 15px;
-  }
+}
 
 footer {
-  background-color:#072BCE;
+  background-color: #072BCE;
   min-height: 266px;
   padding-top: 40px;
 
 }
+
 .footer-robo {
   font-family: 'Roboto';
   font-size: 21px;
   font-weight: bold;
   padding: 10px;
 }
+
 .footer-mont {
   font-family: 'Montserrat';
   font-size: 17px;
   line-height: 29px;
 }
+
 .footer-text {
   text-align: center;
   color: white;
 }
-.txt{
+
+.txt {
   font-size: 1em;
   font-weight: lighter;
   color: black;
 }
-a .txt{
+
+a .txt {
   text-decoration: none;
 }
 
@@ -370,77 +407,91 @@ a .txt{
   text-decoration: none;
   color: black;
 }
+
 /***** MEDIA QUERY ****/
 
-@media only screen and (min-width: 676px){
- .social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 230px;
- }
-
-.social-links img {
-  width: 2rem;
-  height: 2rem;
-  }
-.social-links a {
-  width: 4rem;
-  height: 4rem;
+@media only screen and (min-width: 676px) {
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 230px;
   }
 
-.hero { 
-  background-image: url("images/pencils.jpg");
+  .social-links img {
+    width: 2rem;
+    height: 2rem;
   }
 
-.heroitems {
-  min-width: 670px;
-}
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 303px;
-  margin: 20px 20px;
-}
-
-.blog-cards-box{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between
-}
-.blog-card-img {
-  max-width: 300px;
-}
-
-
-.project-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-}
-@media only screen and (min-width: 1024px){
-
-.headertxt {
-  align-self: flex-start;
+  .social-links a {
+    width: 4rem;
+    height: 4rem;
   }
-.heroitems {
-  width: 80%;
-  left: 100px;
+
+  .hero {
+    background-image: url("images/pencils.jpg");
+  }
+
+  .heroitems {
+    min-width: 670px;
+  }
+
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 303px;
+    margin: 20px 20px;
+  }
+
+  .blog-cards-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-card-img {
+    max-width: 300px;
+  }
+
+
+  .project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-section {
-  padding: 20px 100px;
-}
+@media only screen and (min-width: 1024px) {
 
-.project-card {
-  margin: 30px;
-  max-width: 303px;
-}
-.featured-projects {
-  padding: 20px 11%;
-}
+  .headertxt {
+    align-self: flex-start;
+  }
+
+  .heroitems {
+    width: 80%;
+    left: 100px;
+  }
+
+  section {
+    padding: 20px 100px;
+  }
+
+  .project-card {
+    margin: 30px;
+    max-width: 303px;
+  }
+
+  .featured-projects {
+    padding: 20px 11%;
+  }
+
+  .blog-cards-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
