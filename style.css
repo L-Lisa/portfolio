@@ -31,7 +31,6 @@ section {
   height: 521px;
   z-index: 10;
   padding: 105px 41px 0 41px;
-
 }
 
 .lisaimg {
@@ -64,7 +63,7 @@ section {
 }
 
 .headertxt {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: white;
   align-self: flex-start;
 }
@@ -75,7 +74,7 @@ section {
 }
 
 .roboto {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   color: white;
   font-size: 13px;
   font-weight: bold;
@@ -98,7 +97,7 @@ strong {
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 35px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   line-height: 30px;
 }
 
@@ -108,7 +107,7 @@ strong {
   background-color: rgb(238, 9, 9);
   display: inline-block;
   position: relative;
-  bottom: .25em;
+  bottom: 0.25em;
 }
 
 .dot {
@@ -121,13 +120,12 @@ strong {
   margin-right: 12px;
 }
 
-
 .tech {
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
   padding-bottom: 35px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   line-height: 30px;
   display: flex;
   flex-direction: column;
@@ -139,7 +137,7 @@ h2 {
   color: white;
   width: fit-content;
   padding: 4px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
   margin: 0 auto;
   font-size: 22px;
@@ -147,7 +145,7 @@ h2 {
 }
 
 h4 {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: lighter;
   font-size: 17px;
   color: red;
@@ -167,7 +165,7 @@ h5 {
 }
 
 h3 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 21px;
   text-align: center;
@@ -182,7 +180,6 @@ h3 {
 .smltags {
   display: flex;
   justify-content: left;
-
 }
 
 .linkarrows {
@@ -205,12 +202,11 @@ h3 {
   height: auto;
   padding-top: 35px;
   padding-bottom: 35px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 17px;
   line-height: 30px;
   display: flex;
   flex-direction: column;
-
 }
 
 .gray {
@@ -221,7 +217,7 @@ h3 {
   margin: 0 auto;
   height: auto;
   padding-bottom: 35px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 17px;
   line-height: 30px;
   text-decoration: none;
@@ -242,7 +238,7 @@ h3 {
   margin: 0 auto;
   height: auto;
   padding-top: 35px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 17px;
   line-height: 30px;
   display: flex;
@@ -253,15 +249,14 @@ h3 {
 
 .blog-date {
   color: red;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: lighter;
-
 }
 
 .blog-head {
   font-size: 21px;
   font-weight: bold;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 17px;
   line-height: 30px;
 }
@@ -291,7 +286,7 @@ h3 {
   margin: 0 auto;
   height: auto;
   padding-bottom: 35px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 17px;
   line-height: 30px;
   align-items: flex-start;
@@ -360,7 +355,7 @@ h3 {
   text-decoration: none;
   color: red;
   font-size: 11px;
-  font-family: 'Roboto'
+  font-family: "Roboto";
 }
 
 .linkedin-size img {
@@ -369,21 +364,20 @@ h3 {
 }
 
 footer {
-  background-color: #072BCE;
+  background-color: #072bce;
   min-height: 266px;
   padding-top: 40px;
-
 }
 
 .footer-robo {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 21px;
   font-weight: bold;
   padding: 10px;
 }
 
 .footer-mont {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 17px;
   line-height: 29px;
 }
@@ -455,7 +449,6 @@ a .txt {
     max-width: 300px;
   }
 
-
   .project-cards {
     display: flex;
     flex-direction: row;
@@ -465,7 +458,6 @@ a .txt {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .headertxt {
     align-self: flex-start;
   }
@@ -493,5 +485,20 @@ a .txt {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 220px;
+    margin: 20px 20px;
+  }
+
+  .img300 {
+    width: 220px;
+    height: 204px;
+    object-fit: cover;
+    align-self: center;
   }
 }
