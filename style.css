@@ -11,7 +11,11 @@
 }
 
 section {
-  padding: 40px 36px 0 36px;
+  padding: 40px 76px 0 76px;
+}
+.other-container {
+  width: fit-content;
+  margin: auto;
 }
 
 .hero {
@@ -129,6 +133,7 @@ strong {
   line-height: 30px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 h2 {
@@ -153,14 +158,14 @@ h4 {
 }
 
 h5 {
-  background-color: rgba(255, 192, 203, 0.9);
-  font-size: 9px;
+  background-color: rgba(253, 223, 231, 0.9);
+  font-size: 10px;
+  font-weight: 100;
   line-height: 10px;
   width: fit-content;
   display: inline-block;
   margin: 3px;
   color: rgba(43, 46, 52, 0.7);
-  border: 1px solid rgba(253, 223, 231, 0.9);
   padding: 4px 5px;
 }
 
@@ -214,13 +219,10 @@ h3 {
 }
 
 .other-project-link {
-  margin: 0 auto;
-  height: auto;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   font-family: "Roboto";
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 30px;
-  text-decoration: none;
 }
 
 .other-project-link a {
@@ -301,7 +303,7 @@ h3 {
 
 .more {
   width: auto;
-  margin-top: 40px;
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
 }
@@ -401,6 +403,22 @@ a .txt {
   text-decoration: none;
   color: black;
 }
+.text-lined {
+  text-decoration: underline;
+}
+.blog-cards-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+.blog-card-img {
+  max-width: 320px;
+}
 
 /***** MEDIA QUERY ****/
 
@@ -408,7 +426,7 @@ a .txt {
   .social-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-betwceen;
     width: 230px;
   }
 
@@ -429,31 +447,18 @@ a .txt {
   .heroitems {
     min-width: 670px;
   }
-
-  .blog-card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 303px;
-    margin: 20px 20px;
-  }
-
-  .blog-cards-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .blog-card-img {
-    max-width: 300px;
-  }
-
   .project-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .blog-card-pair {
+    display: flex;
+    flex-direction: row;
+  }
+  .other-container {
+    width: 660px;
   }
 }
 
@@ -468,7 +473,7 @@ a .txt {
   }
 
   section {
-    padding: 20px 100px;
+    padding: 20px 150px;
   }
 
   .project-card {
@@ -478,27 +483,5 @@ a .txt {
 
   .featured-projects {
     padding: 20px 11%;
-  }
-
-  .blog-cards-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .blog-card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 220px;
-    margin: 20px 20px;
-  }
-
-  .img300 {
-    width: 220px;
-    height: 204px;
-    object-fit: cover;
-    align-self: center;
   }
 }
